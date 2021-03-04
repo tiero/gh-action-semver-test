@@ -5,11 +5,12 @@ builds:
       - linux
     goarch:
       - amd64
+release:
+  - prerelease: auto
 dockers:
   - dockerfile: Dockerfile
     skip_push: auto
     image_templates:
-      - "ghcr.io/tiero/ghaction:{{ .Version }}"
       - "ghcr.io/tiero/ghaction:latest"
   - dockerfile: Dockerfile
     skip_push: false
