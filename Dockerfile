@@ -1,3 +1,3 @@
 FROM scratch
-COPY example /usr/bin/example
-ENTRYPOINT ["/usr/bin/example"]
+COPY ghaction /usr/bin/ghaction
+ENTRYPOINT ["/usr/bin/ghaction"]
