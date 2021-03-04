@@ -6,7 +6,7 @@ builds:
     goarch:
       - amd64
 release:
-  - prerelease: auto
+  prerelease: auto
 dockers:
   - dockerfile: Dockerfile
     skip_push: auto
