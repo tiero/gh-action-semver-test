@@ -3,7 +3,7 @@ name: goreleaser
 on:
   push:
     tags:
-      - "*"
+      - "v**.**.**"
 jobs:
   goreleaser:
     runs-on: ubuntu-18.04
@@ -15,4 +15,3 @@ jobs:
 
       - name: Echo
         run: echo "Hello world!"
-       
