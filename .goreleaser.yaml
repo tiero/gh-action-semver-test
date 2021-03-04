@@ -1,0 +1,10 @@
+project_name: gh-action-semver
+builds:
+  - env: [CGO_ENABLED=0]
+    goos:
+      - linux
+    goarch:
+      - amd64
+dockers:
+  - image_templates: ["ghcr.io/tiero/ghaction:{{ .Version }}"]
+    dockerfile: Dockerfile
