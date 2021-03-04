@@ -12,5 +12,6 @@ dockers:
       - "ghcr.io/tiero/ghaction:{{ .Version }}"
       - "ghcr.io/tiero/ghaction:latest"
   - dockerfile: Dockerfile
+    skip_push: false
     image_templates:
       - "ghcr.io/tiero/ghaction:{{ .Version }}"
