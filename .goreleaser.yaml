@@ -6,5 +6,8 @@ builds:
     goarch:
       - amd64
 dockers:
-  - image_templates: ["ghcr.io/tiero/ghaction:{{ .Version }}"]
-    dockerfile: Dockerfile
+  - dockerfile: Dockerfile
+    skip_push: auto
+    image_templates:
+      - "ghcr.io/tiero/ghaction:{{ .Version }}"
+      - "ghcr.io/tiero/ghaction:latest"
